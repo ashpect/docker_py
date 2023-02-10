@@ -1,2 +1,2 @@
-docker build -t vanshmom .
+minikube image build -t vanshmom .
 kubectl logs <pod name>
