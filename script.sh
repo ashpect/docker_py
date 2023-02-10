@@ -1,2 +1,2 @@
-docker build -t testpod .
+docker build -t vanshmom .
 kubectl logs <pod name>

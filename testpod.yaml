@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vanshmom-deployment
+  labels:
+    app: vanshmom
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vanshmom
+  template:
+    metadata:
+      labels:
+        app: vanshmom
+    spec:
+      containers:
+        - name: vanshmom
+          image: vanshmom:latest
+          imagePullPolicy: Never
+          command: ["sleep", "123456"]
