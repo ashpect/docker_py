@@ -17,6 +17,7 @@ COPY ./src/ .
 
 # Set the default command to run when the container starts
 #CMD ["bash"]
-CMD ["/bin/bash", "-c", "python3 /opt/katana/test.py" ]
+CMD ["/bin/bash", "-c", "touch urmom" ]
+#CMD python3 /opt/katana/test.py
 
 
